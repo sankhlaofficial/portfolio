@@ -1,0 +1,27 @@
+.bio {
+  margin-bottom: var(--space-lg);
+}
+
+.bioLine {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xs);
+  white-space: pre-wrap;
+}
+
+.paragraph {
+  color: var(--text-primary);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+}
+
+.currently {
+  color: var(--text-secondary);
+}
+
+.currently a {
+  color: var(--accent-amber);
+}
+
+.currently a:hover {
+  color: var(--accent-blue);
+}

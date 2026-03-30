@@ -1,0 +1,99 @@
+.command {
+  color: var(--accent-green);
+  margin-bottom: var(--space-lg);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.label {
+  color: var(--accent-amber);
+  font-size: 13px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.input,
+.textarea {
+  background: var(--bg-terminal);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  padding: var(--space-sm) var(--space-md);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: var(--accent-amber);
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.submit {
+  align-self: flex-start;
+  background: transparent;
+  border: 1px solid var(--accent-amber);
+  border-radius: 4px;
+  color: var(--accent-amber);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  padding: var(--space-sm) var(--space-lg);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.submit:hover {
+  background: var(--accent-amber);
+  color: var(--bg-primary);
+}
+
+.separator {
+  color: var(--border-color);
+  margin-bottom: var(--space-md);
+  user-select: none;
+}
+
+.findMe {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.socialLine {
+  color: var(--text-secondary);
+}
+
+.socialLine a {
+  color: var(--accent-amber);
+}
+
+.socialLine a:hover {
+  color: var(--accent-blue);
+}

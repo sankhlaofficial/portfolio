@@ -1,0 +1,140 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: var(--space-sm) var(--space-lg);
+  transition: background-color 0.3s, border-color 0.3s;
+  border-bottom: 1px solid transparent;
+}
+
+.navScrolled {
+  background-color: var(--bg-secondary);
+  border-bottom-color: var(--border-color);
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left side prompt */
+.logo {
+  font-size: 14px;
+  color: var(--text-primary);
+  white-space: nowrap;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  padding: 0;
+}
+
+.logo:hover {
+  color: var(--text-bright);
+}
+
+.dollar {
+  color: var(--accent-green);
+  margin-left: 4px;
+}
+
+/* Desktop links */
+.links {
+  display: flex;
+  gap: var(--space-xs);
+  list-style: none;
+}
+
+.link {
+  color: var(--text-secondary);
+  font-size: 13px;
+  padding: var(--space-xs) var(--space-sm);
+  cursor: pointer;
+  transition: color 0.2s;
+  background: none;
+  border: none;
+  font-family: inherit;
+}
+
+.link:hover {
+  color: var(--accent-amber);
+}
+
+.linkActive {
+  color: var(--accent-amber);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  font-family: inherit;
+  font-size: 14px;
+  padding: var(--space-xs) var(--space-sm);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.hamburger:hover {
+  border-color: var(--accent-amber);
+  color: var(--accent-amber);
+}
+
+/* Mobile menu */
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 42px;
+  left: 0;
+  right: 0;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  padding: var(--space-md);
+  list-style: none;
+  z-index: 999;
+}
+
+.mobileMenu li {
+  padding: var(--space-sm) 0;
+}
+
+.mobileLink {
+  color: var(--text-secondary);
+  font-size: 14px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.mobileLink:hover {
+  color: var(--accent-amber);
+}
+
+.mobileLinkActive {
+  color: var(--accent-amber);
+}
+
+.mobileMenuOpen {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

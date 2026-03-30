@@ -1,0 +1,63 @@
+.listing {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.category {
+  /* group wrapper */
+}
+
+.dirHeader {
+  color: var(--accent-blue);
+  font-size: 13px;
+  margin-bottom: var(--space-sm);
+}
+
+.files {
+  padding-left: var(--space-md);
+}
+
+.fileRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  font-size: 13px;
+}
+
+.tree {
+  color: var(--border-color);
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.filename {
+  color: var(--text-primary);
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.bar {
+  color: var(--accent-green);
+  flex-shrink: 0;
+  letter-spacing: 0;
+  font-size: 12px;
+}
+
+.level {
+  color: var(--text-secondary);
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .fileRow {
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+  }
+
+  .filename {
+    min-width: 90px;
+  }
+}
