@@ -4,9 +4,9 @@ export const SITE = {
   name: 'Aditya Sankhla',
   title: 'Aditya Sankhla — CTO & AI-Powered Builder',
   description:
-    'Self-taught developer & CTO building production apps with AI. Flutter, Firebase, React, TypeScript. View my work and get in touch.',
+    'Self-taught developer & CTO building production apps with AI. Flutter, Firebase, React, TypeScript, Anthropic SDK. View my work and get in touch.',
   url: 'https://adityasankhla.vercel.app',
-  tagline: 'CTO at WellM | Building production apps with AI at 5x speed',
+  tagline: 'CTO at WellM | Shipping production apps with AI as a force multiplier',
 }
 
 // ─── Social Links ────────────────────────────────────────────────────────────
@@ -43,13 +43,33 @@ export const PROJECTS: Project[] = [
     link: 'https://atlifeline.org',
   },
   {
+    title: 'CI Agent',
+    subtitle: 'Competitive Intelligence SaaS',
+    stack: ['Next.js', 'TypeScript', 'Anthropic SDK', 'Firebase'],
+    platform: 'Web SaaS',
+    role: 'Solo Builder',
+    description:
+      'AI-powered competitor tracking with a premium UI. Built end-to-end in days using Claude Code as a force multiplier.',
+    link: 'https://github.com/sankhlaofficial/ci-agent',
+  },
+  {
+    title: 'Storybook Agent',
+    subtitle: 'Children’s Book Generator',
+    stack: ['Managed Agents', 'Cloudflare Workers', 'Node.js', 'PDF/EPUB'],
+    platform: 'CLI → Amazon KDP',
+    role: 'Solo Builder',
+    description:
+      'CLI tool that generates illustrated children’s books and exports them as KDP-compliant PDF + EPUB. Published on Amazon KDP.',
+    link: 'https://github.com/sankhlaofficial',
+  },
+  {
     title: 'ReviewReply',
     subtitle: 'AI Review Response Generator',
-    stack: ['Chrome Extension', 'Firebase', 'Gemini AI'],
+    stack: ['Chrome Extension', 'Firebase REST', 'LLM API'],
     platform: 'SaaS Chrome Extension',
     role: 'Solo Builder',
     description:
-      'One-click AI-powered responses to Google Business reviews. Built and shipped solo.',
+      'One-click AI-powered responses to Google Business reviews. Built and shipped solo in 4 days.',
     link: 'https://reviewreply.online',
   },
 ]
@@ -67,30 +87,30 @@ export const EXPERIENCE: Experience[] = [
   {
     title: 'CTO',
     org: 'WellM',
-    period: '2024–Present',
+    period: '2022–Present',
     description:
-      'Built Lifeline wellness platform from scratch. Flutter + Firebase + React + Node.js.',
+      'Sole engineering owner of a wellness platform across iOS, Android, web, and backend. Flutter + Firebase + React + Node.js + TypeScript. Designated HIPAA Security Officer.',
   },
   {
     title: 'Self-Taught Developer',
     org: 'Independent',
-    period: '2021–2024',
+    period: '2021–2022',
     description:
-      'Learned full-stack development with AI assistance. Built multiple production applications.',
+      'Learned full-stack development with AI assistance. Shipped early production apps and joined WellM as intern, then promoted to CTO.',
   },
   {
     title: 'Customer Support',
     org: 'Dyson',
-    period: '2018–2021',
+    period: '2019–2021',
     description:
-      'Developed communication & problem-solving skills. Gurgaon, India.',
+      'Developed communication & problem-solving skills working with global customers. Delhi NCR.',
   },
   {
-    title: 'Student',
+    title: 'B.Tech, Chemical Engineering',
     org: 'IIT BHU, Varanasi',
-    period: '2015–2016',
+    period: '2016–2019',
     description:
-      "One of India's top engineering institutions. Computer Science.",
+      "Three years at one of India's top engineering institutions. Left to pursue independent technology work.",
   },
 ]
 
@@ -101,10 +121,16 @@ export interface SkillCategory {
 }
 
 export const SKILLS: Record<string, SkillCategory> = {
-  Frontend: { Flutter: 90, React: 70, 'HTML/CSS': 85 },
-  Backend: { Firebase: 90, 'Node.js': 70, TypeScript: 70 },
-  Tools: { 'Claude Code': 95, Git: 70, Figma: 50 },
-  Platforms: { Vercel: 70, 'Play Store': 75, 'App Store': 70 },
+  Frontend: { Flutter: 90, React: 75, 'Next.js': 70, 'HTML/CSS': 85 },
+  Backend: { Firebase: 90, 'Node.js': 75, TypeScript: 80, Python: 60 },
+  'AI / ML': {
+    'Claude Code': 95,
+    'Anthropic SDK': 85,
+    'Managed Agents': 80,
+    TensorFlow: 55,
+  },
+  Tools: { Git: 75, Cursor: 75, Figma: 50 },
+  Platforms: { Vercel: 80, Cloudflare: 65, 'Play Store': 75, 'App Store': 70 },
 }
 
 // ─── Navigation ──────────────────────────────────────────────────────────────
